@@ -1,0 +1,34 @@
+{
+  "type": "library",
+  "name": "easydev/wechat",
+  "homepage": "https://github.com/MR-taochuang/wechat.git",
+  "description": "WECHATDEVLOP WECHAT WEAPI WEPAY",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "mr.taochuang",
+      "email": "mr_taochuang@163.com",
+      "role": "developer"
+    }
+  ],
+  "keywords": [
+    "Wepublic",
+    "Weapi",
+    "Wepay",
+    "Wethird"
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-openssl": "*",
+    "easydev/basis":"1.0"
+  },
+
+  "autoload": {
+    "files": [],
+    "psr-4": {
+      "wechat\\": "src"
+    }
+  }
+}
