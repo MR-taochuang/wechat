@@ -108,7 +108,7 @@ class Init extends Driver
      * @param string $type
      * @return string
      */
-    protected function MakeSign($data, $signType = 'MD5',$buff='')
+    protected static function MakeSign($data, $signType = 'MD5',$buff='')
     {
         ksort($data);
         if (isset($data['sign'])) unset($data['sign']);

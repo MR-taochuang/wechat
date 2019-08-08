@@ -110,4 +110,14 @@ class Init extends Driver{
     public function UpdaeFunc($access_token,$signature){
         return self::callback(['access_token'=>$access_token])->instance(__NAMESPACE__,__FUNCTION__)->_post(['signature'=>$signature],'json');
     }
+
+    /**
+     * @param $access_token /代理获取的token
+     * @return mixed
+     * 获取账号可以设置的所有类目
+     *
+     */
+    public function GetCate($access_token){
+        return self::callback(['access_token'=>$access_token])->instance(__NAMESPACE__,__FUNCTION__)->_get();
+    }
 }

@@ -34,7 +34,9 @@ class Api extends Config
         //修改头像 请求方式 POST
         'UpdateHeadimage'=>'https://api.weixin.qq.com/cgi-bin/account/modifyheadimage?access_token=ACCESS_TOKEN',
         //修改功能介绍 请求方式 POST
-        'UpdaeFunc'=>'https://api.weixin.qq.com/cgi-bin/account/modifysignature?access_token=TOKEN'
+        'UpdaeFunc'=>'https://api.weixin.qq.com/cgi-bin/account/modifysignature?access_token=ACCESS_TOKEN',
+        //获取账号可以设置的所有类目
+        'GetCate'=>'https://api.weixin.qq.com/cgi-bin/wxopen/getallcategories?access_token=ACCESS_TOKEN'
     ];
     public function get_url($name)
     {
